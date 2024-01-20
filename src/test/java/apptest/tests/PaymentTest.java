@@ -17,8 +17,8 @@ public class PaymentTest extends TestBase {
         beforeHomePage = new BeforeHomePage(driver);
         paymentPage = new PaymentPage(driver);
         additemToCartPage = new AdditemToCartPage(driver);
-        additemToCartPage.AdditemToCart();
         beforeHomePage.GoToApp();
+        additemToCartPage.AdditemToCart();
         paymentPage.Payment();
     }
 }

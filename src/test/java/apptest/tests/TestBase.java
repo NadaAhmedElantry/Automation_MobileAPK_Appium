@@ -27,13 +27,12 @@ public class TestBase {
         // emulator emulator-5554
         //    dc.setCapability(MobileCapabilityType.UDID, "emulator-5554");
         driver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"), dc);
-       // driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @AfterClass
     public void finshTestCase() {
 
-        driver.terminateApp("(//android.view.ViewGroup[@content-desc=\"store item\"])[1]/android.view.ViewGroup[1]/android.widget.ImageView\"");
+        driver.terminateApp("com.saucelabs.mydemoapp.rn");
         driver.quit();
     }
 
