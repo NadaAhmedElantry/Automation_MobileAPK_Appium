@@ -1,4 +1,4 @@
-package apptest.tests.BusinessPayment;
+package apptest.tests;
 
 import apptest.tests.TestBase;
 import org.testng.annotations.Test;
